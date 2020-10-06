@@ -1,0 +1,51 @@
+TRANSMISSION MEDIA
+
+UNGUIDED MEDIA : WIRLESS
+
+Unguided media transport electromagnetic waves withput using a physical conductor. This type of communications is often referred to as wireless communication.
+
+Radio waves
+Microwaves 
+Infrared
+
+Radio waves = 3 khz to 300 ghz
+infrared = 300 ghz to 400 thz
+light wave = 400 thz to 900 thz
+
+ground propagation - below 2 Mhz
+sky propagation - 2 - 30 Mhz
+Line of sight - > 30 Mhz
+
+
+Radio Waves - 
+
+Used for multicast communication, such as radio, tv, etc..
+Can penetrate through walls
+Omni directional antennas
+freq range 3khz to 1 ghz
+example : FM radio
+covers large area and provides a higher transmission rate.
+ground to sky propagation.
+
+Microwaves -
+
+Unicast lan, network, cellular networks.
+Higher frequency ranges.
+directional antennas - point to point.
+frequency ranges from 1 khz to 300 ghz.
+two types - terrestrial and satellite
+terrestrial - ground based LoS
+satellite - one earth station to another, wider range
+
+
+IR -
+
+It is suitable for short range closed area communication.
+Uses Line Of sight propagation.
+Frequency Range from 300 Ghz to 400 Thz.
+High Bandwidth and high data rate.
+Unreliable outside with interference of sun rays.
+
+
+
+

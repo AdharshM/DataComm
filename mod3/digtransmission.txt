@@ -1,0 +1,104 @@
+1. DIGITAL TO DIGITAL CONVERSION
+ 
+ a. Line coding
+ b. Block coding (optional)
+ c. scramling (optional)
+
+ Line Coding - 
+
+ Sender ----> Encoder ----> Link(DIGITAL DATA) ----> Decoder ----> Receiver
+
+ Characterstics :-
+
+ Data element - smallest unit of data
+ signal element - smallest unit of signal
+ signal elements carries data element
+ Data elements are what we need to send and signal elements are what we can  send.
+ Mapping of data symbols to signals can be done based on r factor.
+
+ Data rate is no of bits send per sec.
+ Signal rate is corresponding to signal(Baud rate, pulse rate, modulation rate)
+ It is advisable to increase the data rate by reducing the signal rate.
+    S = c*N*1/r
+
+ Baseline Wandering:- 
+  
+ The running average of the received signal is acalled baselining.
+ Continous zero or one leads to baseline wandering which prevent the receiver from
+ interpreting the signal correctly.
+
+ DC Components:-
+
+ When the signal voltage is constant for a while frequency will become zero(direct current component).
+ Some media wont support low frequencies(telephone line below 200 Hz)
+ 
+ Self Sychronization:-
+
+ Sender receiver clock should sync properly.
+
+ Line encoding - 
+
+ Unipolar (NRZ)
+
+ All signal levels are on one side of the time axis - either above or below (one polarity)
+ NRZ - Non return to Zero Scheme is an example of this code. The signal level does no return to zero during a symbol transmission.
+ Scheme is prone to baseline wandering and dc components.
+ It has no Sycnhronization or error detection methods.
+ It is simple but costly in power consumption.
+
+
+ ex:  01001
+
+     _1_        _1_
+    |   |      |   |
+    |   |      |   |
+ _0_|   |_0__0_|   |_
+-
+
+
+Polar :-
+
+NRZ - 
+
+Voltages are on both sides of X axis.
+Can be implemented with two voltages, +V for 1 and -V for 0.
+There are two versions :-
+    NZR (NRZ - L) - positive viltage for one symbol and negative for other.
+    NRZ (NRZ - I) - the chnage or lack of change in polarity determines the                     values.
+
+
+
+ANALOG TO DIGITAL CONVERSION
+
+A digital signal is superior to an analog signal because it is more robust to noise and can easily be recovered, corrected and amplified.
+Two methods used for conversion
+
+Pulse code modulation (PCM)
+Delta modulation(DM)
+
+PCM
+
+PCM consist of three steps to digitize an analog signal:
+1. sampling
+2. quantisation
+3. binary encoding
+The maximum frequency of the signal need to be limited for better sampling.
+Filtering should ensure the quality of the signal.
+The digital data received after processing is send to line coding.
+
+Sampling:
+Analog signal is sampled every Ts seconds.
+Ts is referred to as the sampling interval.
+fs = (1 / Ts) is called the sampling rate or sampling frequency
+There are 3 sampling methods :
+  Ideal - pulses from the analog signal are sampled and not easy to implement.
+  Natural - a high speed switch is turned on for only the small period of time when the sampling occurs and retain the shape of the signal(varying amplitude).
+  Flattop(commonly used) - sample and hold, generating a circuit 
+
+Pulse amplitude modulation (PAM) is the name of this process.
+
+Nyquist theorem states that, the sampling rate must be at least 2 times th ehighest frequency contained in the signal.
+
+
+
+
